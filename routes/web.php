@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/variables-entorno', function () {
+
+    return config('database.default');
+});
